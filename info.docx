@@ -1,5 +1,5 @@
--	Tried SMOTE and ADASYN for synthetic data, they were pretty much the same but SMOTE seemed a tiny bit better.
--	Upsampling test data gave better results, but it seems like it’s putting fake data in there.
+-	Tried SMOTE and ADASYN for up-sampling by creating synthetic data, they were pretty much the same but SMOTE seemed a tiny bit better. NOTE: all files currently use SMOTE.  To use the ADASYN alg, just replace SMOTE with ADASYN (I think there are like 2 occurrences)
+-	Upsampling test data gave better results, but it seems like it’s putting fake data in there. 
 Method ^^: Tried downsampling the test data and upsampling the training data so that the testing data wouldn’t be synthetically increased at least.  Predicting “no” for attrition was ok, with the average being in the high 60s.  Predicting yes for attrition was worse, with the average being in the high 40s.
 -	Adjusting the number of features selected from 20 to 25 improved overall results. 23 seems better.  22 lowest accuracy = 58, high 70. 14 Lowest accuracy was 61, high 70. K=13, L=57, upper=70
 
